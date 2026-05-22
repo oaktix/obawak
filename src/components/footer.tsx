@@ -166,7 +166,7 @@ export default function Footer() {
             <div className="pt-2 space-y-2 border-t border-white/5 text-xs text-white/60">
               <div className="flex items-center">
                 <Phone className="h-3.5 w-3.5 text-accent mr-2 shrink-0" />
-                <span>+234 (803) 123-4567</span>
+                <span>+234 706 669 2068</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-3.5 w-3.5 text-accent mr-2 shrink-0" />
@@ -174,7 +174,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-3.5 w-3.5 text-accent mr-2 shrink-0" />
-                <span>Lekki Phase 1, Lagos, Nigeria</span>
+                <span>B3, Center Point Plaza, Kola Adegbola Rd, Dugbe, Ibadan</span>
               </div>
             </div>
           </div>

@@ -89,7 +89,7 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <h2 className="font-display text-2xl font-bold text-primary">Office Coordinates</h2>
                 <p className="text-xs sm:text-sm text-gray-500 leading-relaxed font-light">
-                  Our headquarters are located in the heart of Lekki. Stop by our offices during operation hours or reach our 24/7 hotline.
+                  Our headquarters are located in the heart of Dugbe, Ibadan. Stop by our offices during operation hours or reach our 24/7 hotline.
                 </p>
               </div>
 
@@ -102,7 +102,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <span className="text-[10px] font-bold text-gray-400 block uppercase tracking-wider">Hotlines</span>
-                    <span className="text-sm font-semibold text-primary block">+234 (803) 123-4567</span>
+                    <span className="text-sm font-semibold text-primary block">+234 706 669 2068</span>
+                    <span className="text-sm font-semibold text-primary block">+234 906 551 5720</span>
+                    <span className="text-sm font-semibold text-primary block">+234 813 863 2387</span>
                     <span className="text-xs text-gray-500 font-light">Emergency Support: 24/7 Dispatch</span>
                   </div>
                 </div>
@@ -126,8 +128,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <span className="text-[10px] font-bold text-gray-400 block uppercase tracking-wider">Headquarters</span>
-                    <span className="text-sm font-semibold text-primary block">12 Admiralty Way, Lekki Phase 1</span>
-                    <span className="text-xs text-gray-500 font-light">Lagos State, Nigeria</span>
+                    <span className="text-sm font-semibold text-primary block">B3, Center Point Plaza, Kola Adegbola Road, Dugbe</span>
+                    <span className="text-xs text-gray-500 font-light">Ibadan, Oyo State, Nigeria</span>
                   </div>
                 </div>
 
@@ -144,24 +146,18 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Premium Geometric Map Mock */}
-              <div className="relative h-64 bg-gradient-premium border border-accent/20 rounded-2xl overflow-hidden shadow-md flex items-center justify-center">
-                {/* Geometric lines imitating streets */}
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-30"></div>
-                <div className="absolute h-full w-[2px] bg-accent/25 left-1/3 rotate-12"></div>
-                <div className="absolute h-full w-[2px] bg-accent/25 left-2/3 -rotate-45"></div>
-                <div className="absolute w-full h-[2px] bg-accent/25 top-1/4"></div>
-                <div className="absolute w-full h-[2px] bg-accent/25 top-3/4"></div>
-                
-                {/* Floating GPS marker */}
-                <div className="relative z-10 text-center space-y-2 animate-bounce">
-                  <div className="bg-accent text-primary p-3 rounded-full shadow-2xl flex items-center justify-center border-4 border-primary">
-                    <MapPin className="h-6 w-6" />
-                  </div>
-                  <span className="bg-primary/95 text-white text-[10px] font-bold px-3 py-1 rounded-md border border-white/10 uppercase tracking-widest block shadow">
-                    Obawak Lekki HQ
-                  </span>
-                </div>
+              {/* Embedded Google Map */}
+              <div className="relative h-64 rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                <iframe
+                  title="Obawak Consult Office Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5!2d3.8725!3d7.3875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjMnMTUuMCJOIDPCsDUyJzIxLjAiRQ!5e0!3m2!1sen!2sng!4v1700000000000&q=Center+Point+Plaza,+Kola+Adegbola+Road,+Dugbe,+Ibadan,+Oyo+State,+Nigeria"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
 
