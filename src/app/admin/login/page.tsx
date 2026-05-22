@@ -16,9 +16,16 @@ export default function AdminLoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
-    // Simulated async check (could be a fetch to a secure endpoint)
+    // Simulated async check
     await new Promise((r) => setTimeout(r, 500));
-    if (password === ADMIN_PASSWORD) {
+    
+    let currentPassword = ADMIN_PASSWORD;
+    if (typeof window !== "undefined") {
+      const custom = localStorage.getItem("obawak_admin_custom_password");
+      if (custom) currentPassword = custom;
+    }
+
+    if (password === currentPassword) {
       setStatus("success");
       // Persist admin login flag
       if (typeof window !== "undefined") {

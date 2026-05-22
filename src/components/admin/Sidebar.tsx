@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { Home, LayoutDashboard, Settings, Grid2X2, Calendar, BookOpen, MessageSquare, FileText, LogOut } from "lucide-react";
+import { Home, LayoutDashboard, Settings, Grid2X2, Calendar, BookOpen, MessageSquare, FileText, LogOut, Key } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 
@@ -15,6 +15,7 @@ const adminLinks = [
   { name: "Testimonials", href: "/admin/testimonials", icon: MessageSquare },
   { name: "Inquiries", href: "/admin/inquiries", icon: Calendar },
   { name: "Quotes", href: "/admin/quotes", icon: BookOpen },
+  { name: "Security", href: "/admin/settings", icon: Key },
 ];
 
 export default function Sidebar() {
