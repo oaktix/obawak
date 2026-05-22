@@ -23,7 +23,7 @@ export default function WhatsAppButton() {
 
   return (
     <a
-      href="https://wa.me/2348031234567?text=Hello%20Obawak%20Consult,%20I'd%20like%20to%20inquire%20about%20your%20services."
+      href="https://wa.me/2347066692068?text=Hello%20Obawak%20Consult,%20I'd%20like%20to%20inquire%20about%20your%20services."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba59] text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 active:scale-95 flex items-center justify-center animate-pulse-gold group cursor-pointer"
