@@ -54,9 +54,9 @@ export const SEED_HOMEPAGE: HomepageContent = {
       ]
     },
     contactInfo: {
-      phone: "+234 (803) 123-4567",
+      phone: "+234 7066692068, +234 9065515720, +234 8138632387",
       email: "inquiries@obawakconsult.com",
-      address: "12 Admiralty Way, Lekki Phase 1, Lagos, Nigeria",
+      address: "B3, Center Point Plaza, Kola Adegbola road, Dugbe, Ibadan, Oyo State",
       hours: "Mon - Fri: 8:00 AM - 5:00 PM | Emergency Support: 24/7"
     }
   },
