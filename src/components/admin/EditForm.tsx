@@ -59,13 +59,15 @@ export default function EditForm({
   }
 
   // Sync formData when initialData changes
+  const initialDataStr = JSON.stringify(initialData);
   React.useEffect(() => {
     const obj: Record<string, any> = {};
     fields.forEach((f) => {
       obj[f.name] = initialData[f.name] ?? '';
     });
     setFormData(obj);
-  }, [initialData, fields]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialDataStr]);
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
