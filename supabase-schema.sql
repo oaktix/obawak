@@ -171,16 +171,15 @@ CREATE POLICY "Allow public inserts on quote_requests" ON quote_requests FOR INS
 CREATE POLICY "Allow public inserts on testimonials" ON testimonials FOR INSERT WITH CHECK (true);
 
 -- Admin CRUD Policies (Service Role or Authenticated)
--- Using service_role or admin user roles if configured.
--- For simple setup, we check if user is authenticated via Supabase auth.
-CREATE POLICY "Allow admin CRUD on homepage_content" ON homepage_content USING (auth.role() = 'authenticated');
-CREATE POLICY "Allow admin CRUD on services" ON services USING (auth.role() = 'authenticated');
-CREATE POLICY "Allow admin CRUD on projects" ON projects USING (auth.role() = 'authenticated');
-CREATE POLICY "Allow admin CRUD on project_images" ON project_images USING (auth.role() = 'authenticated');
-CREATE POLICY "Allow admin CRUD on testimonials" ON testimonials USING (auth.role() = 'authenticated');
-CREATE POLICY "Allow admin CRUD on blog_posts" ON blog_posts USING (auth.role() = 'authenticated');
-CREATE POLICY "Allow admin CRUD on inquiries" ON inquiries USING (auth.role() = 'authenticated');
-CREATE POLICY "Allow admin CRUD on quote_requests" ON quote_requests USING (auth.role() = 'authenticated');
+-- For simple setup, we allow all operations (true) since the admin dashboard uses a local password mechanism.
+CREATE POLICY "Allow admin CRUD on homepage_content" ON homepage_content USING (true);
+CREATE POLICY "Allow admin CRUD on services" ON services USING (true);
+CREATE POLICY "Allow admin CRUD on projects" ON projects USING (true);
+CREATE POLICY "Allow admin CRUD on project_images" ON project_images USING (true);
+CREATE POLICY "Allow admin CRUD on testimonials" ON testimonials USING (true);
+CREATE POLICY "Allow admin CRUD on blog_posts" ON blog_posts USING (true);
+CREATE POLICY "Allow admin CRUD on inquiries" ON inquiries USING (true);
+CREATE POLICY "Allow admin CRUD on quote_requests" ON quote_requests USING (true);
 
 -- -------------------------------------------------------------
 -- Indexes for performance Optimization
